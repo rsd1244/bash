@@ -1,0 +1,12 @@
+#!/bin/bash
+
+NFC_NORTH=(
+	Bears
+	Packers
+	Lions
+	Vikings
+)
+
+for teams in ${NFC_NORTH[@]}
+	do echo $teams
+done
