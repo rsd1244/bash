@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo -n "Who is your favorite NFL team? "
+read fav_team
+if [ "$fav_team" = "Chicago Bears" ]
+then
+        echo "Yes, I agree.  The Bears are the best team in the NFL."
+else
+
+        if [ "$fav_team" = "Green Bay Packers" ]
+        then
+                echo "Green Bay Packers!?!? Are you serious right now? BOOOO! No one likes Aaron Rogers!"
+
+        else
+                echo "Really dude?  We all know the Bears are the best team in the NFL!"
+
+        fi
+fi
