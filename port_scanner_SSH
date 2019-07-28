@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "Enter the starting IP address: "
+read FirstIP
+
+echo "Enter the last octet of the last IP adress: "
+# the last octet is the last number after the third period such as 254
+read LastIP
+
+echo "Enter the port number you want to scan for: "
+read port
+
+nmap -sT $FirstIP-$LastIP -p $port >/dev/null -oG mySSHscan
+
+cat mySSHscan | grep open > mySSHscanResult
+
+cat mySSHscanResult
