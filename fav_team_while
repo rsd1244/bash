@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#This is a team guessing game
+
+echo -n "Try and guess my favorite NFL team: "
+read guess
+while [ "$guess" != "Bears" ]; do
+	echo "No, not "$guess". Try again: "; read guess
+done
